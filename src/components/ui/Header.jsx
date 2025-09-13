@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Header = () => {
+  const navigate = useNavigate()
   const [isConnected, setIsConnected] = useState(false)
   const [account, setAccount] = useState('')
   const [isLoading, setIsLoading] = useState(false)
@@ -102,7 +104,12 @@ const Header = () => {
             <h2>BlueCarbonX</h2>
           </div>
           <div className="header-buttons">
-            <button className="btn btn-outline">Register</button>
+            <button 
+              className="btn btn-outline"
+              onClick={() => navigate('/register')}
+            >
+              Register
+            </button>
             {isConnected ? (
               <div className="wallet-info">
                 <span className="wallet-address">{formatAddress(account)}</span>

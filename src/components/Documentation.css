@@ -1,0 +1,156 @@
+/* Documentation Page Styles */
+.documentation-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e3f2fd 0%, #e8f5e8 100%);
+  padding: 2rem 1rem;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.documentation-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.documentation-header-section {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.documentation-header-section h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1a365d;
+  margin-bottom: 0.5rem;
+}
+
+.documentation-header-section p {
+  color: #4a5568;
+  font-size: 1.1rem;
+}
+
+.documentation-content {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 2.5rem;
+  line-height: 1.7;
+  color: #2d3748;
+}
+
+.doc-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1a365d;
+  margin: 2rem 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.doc-header:first-of-type {
+  margin-top: 0;
+}
+
+.doc-subheader {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 1.5rem 0 0.75rem 0;
+}
+
+.doc-paragraph {
+  margin: 0.75rem 0;
+  font-size: 1rem;
+  color: #4a5568;
+}
+
+.doc-bullet {
+  margin: 0.5rem 0;
+  padding-left: 1rem;
+  position: relative;
+  color: #4a5568;
+}
+
+.doc-bullet::before {
+  content: "•";
+  color: #3182ce;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.doc-numbered {
+  margin: 0.5rem 0;
+  padding-left: 1rem;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+.doc-arrow {
+  margin: 0.5rem 0;
+  padding-left: 1rem;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+.documentation-back {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: #3182ce;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  color: #2c5aa0;
+  background-color: rgba(49, 130, 206, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .documentation-container {
+    padding: 1rem 0.5rem;
+  }
+
+  .documentation-header-section h1 {
+    font-size: 2rem;
+  }
+
+  .documentation-content {
+    padding: 1.5rem;
+  }
+
+  .doc-header {
+    font-size: 1.3rem;
+  }
+
+  .doc-subheader {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .documentation-header-section h1 {
+    font-size: 1.75rem;
+  }
+
+  .documentation-content {
+    padding: 1rem;
+  }
+
+  .doc-header {
+    font-size: 1.2rem;
+  }
+
+  .doc-subheader {
+    font-size: 1rem;
+  }
+}
