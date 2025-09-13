@@ -83,7 +83,7 @@ function Landing() {
             </div>
             <div className="feature-card">
               <div className="feature-icon marketplace-icon">
-                <span className="icon-cart">🛒</span>
+                <span className="icon-cart">💱</span>
               </div>
               <div className="feature-header">
                 <span className="feature-title-icon">💰</span>
