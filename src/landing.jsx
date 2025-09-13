@@ -1,20 +1,13 @@
 import './App.css'
+import Footer from './components/ui/Footer'
+import Header from './components/ui/Header'
+
 
 function Landing() {
   return (
     <div className="app">
       {/* Header */}
-      <header className="header">
-        <div className="header-content">
-          <div className="logo"><img src="src/assets/icon.png" />
-            <h2>BlueCarbonX</h2>
-          </div>
-          <div className="header-buttons">
-            <button className="btn btn-outline">Register</button>
-            <button className="btn btn-primary">Connect Wallet</button>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero Section */}
       <section className="hero">
@@ -26,8 +19,8 @@ function Landing() {
             Measure, Verify, and Trade Carbon Credits with Transparency.
           </p>
           <div className="hero-buttons">
-            <button className="btn btn-primary btn-large">Register as Producer</button>
-            <button className="btn btn-secondary btn-large">Register as Verifier</button>
+            <button className="btn btn-primary btn-large">Login as Producer</button>
+            <button className="btn btn-secondary btn-large">Login as Verifier</button>
             <button className="btn btn-outline btn-large">Explore Marketplace</button>
           </div>
         </div>
@@ -109,19 +102,10 @@ function Landing() {
       </section>
 
       {/* Footer */}
-      <footer className="footer">
-        <div className="footer-content">
-          <div className="footer-links">
-            <a href="#about">About</a>
-            <a href="#documentation">Documentation</a>
-            <a href="#github">GitHub</a>
-            <a href="#contact">Contact</a>
-          </div>
-          <p>&copy; 2024 BlueCarbonX. All rights reserved.</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }
+
 
 export default Landing
