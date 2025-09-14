@@ -1,9 +1,12 @@
+import { useNavigate } from 'react-router'
 import './App.css'
 import Footer from './components/ui/Footer'
 import Header from './components/ui/Header'
+import VerifierApp from './components/VerifierApp'
 
 
 function Landing() {
+  const navigate = useNavigate()
   return (
     <div className="app">
       {/* Header */}
@@ -20,7 +23,7 @@ function Landing() {
           </p>
           <div className="hero-buttons">
             <button className="btn btn-primary btn-large">Login as Producer</button>
-            <button className="btn btn-secondary btn-large">Login as Verifier</button>
+            <button className="btn btn-secondary btn-large" onClick={() => navigate('/verifier')}>Login as Verifier</button>
             <button className="btn btn-outline btn-large">Explore Marketplace</button>
           </div>
         </div>

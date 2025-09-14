@@ -5,6 +5,7 @@ import About from './components/About'
 import Documentation from './components/Documentation'
 import GitHub from './components/GitHub'
 import Contact from './components/Contact'
+import VerifierApp from './components/VerifierApp'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/documentation" element={<Documentation />} />
         <Route path="/github" element={<GitHub />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/verifier" element={<VerifierApp />} />
       </Routes>
     </Router>
   )
