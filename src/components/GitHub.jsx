@@ -41,7 +41,7 @@ Prerequisites:
 
 Installation:
 1. Clone the repository
-   git clone https://github.com/bluecarbonx/bluecarbonx.git
+   git clone https://github.com/meet25284/BlueCarbonX.git
    
 2. Install dependencies
    npm install
@@ -263,7 +263,7 @@ Q4 2024:
         
         <div className="github-actions">
           <a 
-            href="https://github.com/bluecarbonx/bluecarbonx" 
+            href="https://github.com/meet25284/BlueCarbonX.git" 
             target="_blank" 
             rel="noopener noreferrer"
             className="github-link"

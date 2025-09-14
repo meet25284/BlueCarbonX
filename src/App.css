@@ -167,11 +167,13 @@ body {
   padding: 5rem 0;
   background: #F5F5F5;
   width: 100%;
+  display: flex;
+  justify-content: center;
   
 }
 
 .about-content {
-  width: 100%;
+  width: fit-content;
   padding: 0 2rem;
   text-align: center;
   display: flex;
