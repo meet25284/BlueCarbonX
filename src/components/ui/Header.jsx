@@ -100,7 +100,7 @@ const Header = () => {
   return (
     <header className="header">
         <div className="header-content">
-          <div className="logo"><img src="src/assets/icon.png" />
+          <div className="logo"><img src="public/icon.png" />
             <h2 style={{paddingBottom: '0px', borderBottom: 'none'}}>BlueCarbonX</h2>
           </div>
           <div className="header-buttons">
