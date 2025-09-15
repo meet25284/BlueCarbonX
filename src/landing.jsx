@@ -2,8 +2,7 @@ import { useNavigate } from 'react-router'
 import './App.css'
 import Footer from './components/ui/Footer'
 import Header from './components/ui/Header'
-import VerifierApp from './components/VerifierApp'
-
+import bgImg from "/bg.jpg";
 
 function Landing() {
   const navigate = useNavigate()
@@ -13,7 +12,16 @@ function Landing() {
       <Header />
 
       {/* Hero Section */}
-      <section className="hero">
+      <section className="hero"
+      style={{
+        backgroundImage: `url(${bgImg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        height: "90vh", 
+        width: "100%",
+        textAlign: 'center',
+      }}
+      >
         <div className="hero-content">
           <h1 className="hero-title">
             BlueCarbonX – Blockchain-Based Blue Carbon Registry & MRV System
