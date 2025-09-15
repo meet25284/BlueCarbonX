@@ -2,7 +2,6 @@ import { useNavigate } from 'react-router'
 import './App.css'
 import Footer from './components/ui/Footer'
 import Header from './components/ui/Header'
-import bgImg from "/bg.jpg";
 
 function Landing() {
   const navigate = useNavigate()
@@ -14,7 +13,7 @@ function Landing() {
       {/* Hero Section */}
       <section className="hero"
       style={{
-        backgroundImage: `url(${bgImg})`,
+        backgroundImage: "url('/bg.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         height: "90vh", 
