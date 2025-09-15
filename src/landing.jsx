@@ -22,9 +22,9 @@ function Landing() {
             Measure, Verify, and Trade Carbon Credits with Transparency.
           </p>
           <div className="hero-buttons">
-            <button className="btn btn-primary btn-large">Login as Producer</button>
+            <button className="btn btn-primary btn-large" onClick={() => navigate('/producer')}>Login as Producer</button>
             <button className="btn btn-secondary btn-large" onClick={() => navigate('/verifier')}>Login as Verifier</button>
-            <button className="btn btn-outline btn-large">Explore Marketplace</button>
+            <button className="btn btn-outline btn-large" onClick={() => navigate('/marketplace')}>Explore Marketplace</button>
           </div>
         </div>
       </section>

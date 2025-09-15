@@ -101,7 +101,7 @@ const Header = () => {
     <header className="header">
         <div className="header-content">
           <div className="logo"><img src="src/assets/icon.png" />
-            <h2>BlueCarbonX</h2>
+            <h2 style={{paddingBottom: '0px', borderBottom: 'none'}}>BlueCarbonX</h2>
           </div>
           <div className="header-buttons">
             <button 
