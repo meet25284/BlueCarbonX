@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --color-bg: #0D1B2A;
+  --color-surface: #1B263B;
+  --color-primary: #4FC3F7;
+  --color-secondary: #16A34A;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #D1D5DB;
+  --color-link: #60A5FA;
+  --color-error: #EF4444;
+}
+
 html,
 body,
 #root {
@@ -10,13 +21,17 @@ body,
 }
 
 body {
-  background-color: #f8fafd;
+  background-color: var(--color-bg);
+  color: var(--color-text-secondary);
   font-family: sans-serif;
   overflow-y: scroll;
 }
 
+a { color: var(--color-link); }
+a:hover { color: var(--color-primary); }
+
 .loader {
-  border-top-color: #3B82F6;
+  border-top-color: var(--color-primary);
   animation: spinner 1.0s infinite linear;
 }
 
