@@ -114,7 +114,7 @@ function App() {
           <div>
             <div className="hero-section">
               <div className="hero-content">
-                <h1 className="hero-title" style={{fontSize: '2em'}}>Project Verification</h1>
+                <h1 className="hero-title" style={{fontSize: '2em', color: 'white'}}>Project Verification</h1>
               </div>
             </div>
 

@@ -102,12 +102,13 @@ const Header = () => {
     <header className="header">
         <div className="header-content">
           <div className="logo"><img src={imgUrl} />
-            <h2 style={{paddingBottom: '0px', borderBottom: 'none'}}>BlueCarbonX</h2>
+            <h2 style={{paddingBottom: '0px', borderBottom: 'none', height: '25px'}}>BlueCarbonX</h2>
           </div>
           <div className="header-buttons">
             <button 
               className="btn btn-outline"
               onClick={() => navigate('/register')}
+              style={{color: '#FFFFFF', border: '1px solid #FFFFFF'}}
             >
               Register
             </button>
@@ -117,6 +118,7 @@ const Header = () => {
                 <button 
                   className="btn btn-primary" 
                   onClick={disconnectWallet}
+                  
                 >
                   Disconnect
                 </button>
@@ -126,6 +128,7 @@ const Header = () => {
                 className="btn btn-primary" 
                 onClick={connectWallet}
                 disabled={isLoading}
+                style={{backgroundColor: '#4fc3f7'}}
               >
                 {isLoading ? 'Connecting...' : 'Connect Wallet'}
               </button>

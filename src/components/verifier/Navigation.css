@@ -1,13 +1,13 @@
 .sidebar {
-  background: white;
-  border-right: 1px solid #e9ecef;
+  background: var(--color-surface);
+  border-right: 1px solid rgba(255,255,255,0.12);
   position: fixed;
   left: 0;
   top: 0;
   height: 100vh;
   width: 250px;
   z-index: 100;
-  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.25);
 }
 
 .sidebar-container {
@@ -18,7 +18,7 @@
 }
 
 .sidebar-brand h1 {
-  color: #31326F;
+  color: var(--color-text-primary);
   font-size: 1.8rem;
   margin: 0 0 2rem 0;
   font-weight: 700;
@@ -38,7 +38,7 @@
   border: none;
   border-radius: 12px;
   background: transparent;
-  color: #31326F;
+  color: var(--color-text-secondary);
   cursor: pointer;
   transition: all 0.3s ease;
   font-weight: 500;
@@ -50,15 +50,15 @@
 }
 
 .sidebar-link:hover {
-  background: rgba(49, 50, 111, 0.1);
-  color: #31326F;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--color-text-primary);
   transform: translateX(5px);
 }
 
 .sidebar-link.active {
-  background: linear-gradient(135deg, #31326F, #4A4A8A);
-  color: white;
-  box-shadow: 0 4px 15px rgba(49, 50, 111, 0.3);
+  background: linear-gradient(135deg, var(--color-primary), #60A5FA);
+  color: #0b1220;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
 }
 
 @media (max-width: 768px) {

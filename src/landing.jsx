@@ -38,7 +38,7 @@ function Landing() {
 
       {/* About Section */}
       <section className="about">
-        <div className="about-content">
+        <div className="about-content" style={{boxShadow: '0 4px 12px #4fc3f7'}}>
           <h2>About BlueCarbonX</h2>
             <p>BlueCarbonX is a blockchain-based platform that enables transparent and verifiable carbon credit generation from blue carbon ecosystems like mangroves and seagrass.
 

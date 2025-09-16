@@ -7,9 +7,10 @@
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  font-family: "Bitcount Grid Double", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.6;
-  color: #31326F;
+  color: var(--color-text-secondary);
+  background: var(--color-bg);
 }
 
 .app {
@@ -20,7 +21,7 @@ body {
 
 /* Header Styles */
 .header {
-  background: #c1e2e6;
+  background: var(--color-surface);
   box-shadow: 0 2px 10px rgba(49, 50, 111, 0.1);
   position: sticky;
   top: 0;
@@ -45,7 +46,7 @@ body {
 }
 
 .logo h2 {
-  color: #31326F;
+  color: var(--color-text-primary);
   font-size: 1.8rem;
   font-weight: 700;
 }
@@ -63,13 +64,13 @@ body {
 }
 
 .wallet-address {
-  background: rgba(49, 50, 111, 0.1);
+  background: rgba(255, 255, 255, 0.08);
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-size: 0.9rem;
-  color: #31326F;
+  color: var(--color-text-secondary);
   font-weight: 500;
-  border: 1px solid rgba(49, 50, 111, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 /* Button Styles */
@@ -86,35 +87,36 @@ body {
 }
 
 .btn-primary {
-  background: #31326F;
-  color: white;
+  background: #000000;
+  color: #FFFFFF;
 }
 
 .btn-primary:hover {
-  background: #25254a;
+  background: #67d2fb;
   transform: translateY(-2px);
+  color: #000000;
 }
 
 .btn-secondary {
-  background: #31326F;
-  color: white;
+  background: #000000;
+  color: #FFFFFF;
 }
 
 .btn-secondary:hover {
-  background: #25254a;
+  background: #67d2fb;
   transform: translateY(-2px);
+  color: #0b1220;
 }
 
 .btn-outline {
   background: transparent;
-  color: #25254a;
-  background: white;
-
+  color:#000000;
+  border: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 .btn-outline:hover {
-  color: white;
-  background: #25254a;
+  color: #0b1220;
+  background: var(--color-primary);
   transform: translateY(-2px);
 }
 
@@ -133,9 +135,10 @@ body {
 
 .hero-title {
   font-size: 3.5rem;
-  font-weight: 800;
+  font-weight: 400;
   margin-bottom: 1.5rem;
   line-height: 1.2;
+  color: #000000;
 }
 
 .hero-subtitle {
@@ -145,6 +148,7 @@ body {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  color: #000000;
 }
 
 .hero-buttons {
@@ -157,10 +161,11 @@ body {
 /* About Section */
 .about {
   padding: 5rem 0;
-  background: #F5F5F5;
+  background:#1b293b;
   width: 100%;
   display: flex;
   justify-content: center;
+
   
 }
 
@@ -171,26 +176,26 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
 }
 
 .about h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  color: #31326F;
-  display: ;
+  color: var(--color-text-primary);
+  
 }
 
 .about p {
   font-size: 1.1rem;
-  color: #31326F;
+  color: var(--color-text-secondary);
   line-height: 1.8;
   text-align: justify; 
   
 }
 
 .pointer {font-size: 1.1rem;
-  color: #31326F;
+  color: var(--color-text-secondary);
   line-height: 1.8;
   text-align: justify;
   display: flex;
@@ -201,7 +206,7 @@ body {
 /* Features Section */
 .features {
   padding: 5rem 0;
-  background: white;
+  background: transparent;
   width: 100%;
 }
 
@@ -214,7 +219,7 @@ body {
 .features h2 {
   font-size: 2.5rem;
   margin-bottom: 3rem;
-  color: #31326F;
+  color: var(--color-text-primary);
 }
 
 .features-grid {
@@ -225,14 +230,14 @@ body {
 }
 
 .feature-card {
-  background: white;
+  background: var(--color-surface);
   padding: 2.5rem 2rem;
   border-radius: 16px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid rgba(255,255,255,0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: left;
   position: relative;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px #4fc3f7;
 }
 
 .feature-card:hover {
@@ -249,19 +254,19 @@ body {
   justify-content: center;
   margin: 0 auto 1.5rem;
   font-size: 24px;
-  color: white;
+  color: #0b1220;
 }
 
 .producer-icon {
-  background: #4ade80;
+  background: var(--color-secondary);
 }
 
 .verifier-icon {
-  background: #31326F;
+  background: var(--color-primary);
 }
 
 .marketplace-icon {
-  background: #c1e2e6;
+  background: #67d2fb;
 }
 
 .feature-header {
@@ -279,12 +284,12 @@ body {
 .feature-card h3 {
   font-size: 1.5rem;
   margin: 0;
-  color: #31326F;
+  color: var(--color-text-primary);
   font-weight: 700;
 }
 
 .feature-subtitle {
-  color: #6b7280;
+  color: var(--color-text-secondary);
   font-size: 0.95rem;
   margin-bottom: 1.5rem;
   text-align: center;
@@ -298,7 +303,7 @@ body {
 }
 
 .feature-list li {
-  color: #31326F;
+  color: var(--color-text-secondary);
   font-size: 0.9rem;
   line-height: 1.6;
   margin-bottom: 0.5rem;
@@ -308,7 +313,7 @@ body {
 
 .feature-list li::before {
   content: "•";
-  color: #4ade80;
+  color: var(--color-secondary);
   font-weight: bold;
   position: absolute;
   left: 0;
@@ -316,8 +321,8 @@ body {
 
 /* Footer */
 .footer {
-  background: #31326F;
-  color: white;
+  background: var(--color-surface);
+  color: var(--color-text-secondary);
   padding: 3rem 0 2rem;
   margin-top: auto;
   width: 100%;
@@ -338,17 +343,17 @@ body {
 }
 
 .footer-links a {
-  color: #a0aec0;
+  color: var(--color-link);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-  color: white;
+  color: var(--color-text-primary);
 }
 
 .footer p {
-  color: #a0aec0;
+  color: var(--color-text-secondary);
   font-size: 0.9rem;
 }
 

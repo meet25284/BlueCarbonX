@@ -10,7 +10,7 @@
 }
 
 .tracker-header h2 {
-  color: #31326F;
+  color: var(--color-text-primary);
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
@@ -18,7 +18,7 @@
 }
 
 .tracker-header p {
-  color: #666;
+  color: var(--color-text-secondary);
   font-size: 1.2rem;
   margin: 0;
 }
@@ -33,10 +33,10 @@
 
 .filter-btn {
   padding: 0.8rem 1.5rem;
-  border: 2px solid #e9ecef;
+  border: 2px solid rgba(255,255,255,0.12);
   border-radius: 12px;
-  background: white;
-  color: #31326F;
+  background: var(--color-surface);
+  color: var(--color-text-secondary);
   cursor: pointer;
   transition: all 0.3s ease;
   font-weight: 500;
@@ -45,17 +45,17 @@
 }
 
 .filter-btn:hover {
-  border-color: #31326F;
-  background: rgba(49, 50, 111, 0.05);
+  border-color: var(--color-primary);
+  background: rgba(255,255,255,0.06);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(49, 50, 111, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .filter-btn.active {
-  background: linear-gradient(135deg, #31326F, #4A4A8A);
-  color: white;
-  border-color: #31326F;
-  box-shadow: 0 6px 20px rgba(49, 50, 111, 0.3);
+  background: linear-gradient(135deg, var(--color-primary), #60A5FA);
+  color: #0b1220;
+  border-color: var(--color-primary);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
 }
 
 .documents-grid {
@@ -66,10 +66,10 @@
 }
 
 .document-card {
-  background: white;
+  background: var(--color-surface);
   border-radius: 16px;
   padding: 1.5rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
   transition: all 0.3s ease;
   cursor: pointer;
   border: 2px solid transparent;
@@ -79,8 +79,8 @@
 
 .document-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-  border-color: #31326F;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  border-color: var(--color-primary);
 }
 
 .document-card::before {
@@ -90,7 +90,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #31326F, #4A4A8A);
+  background: linear-gradient(90deg, var(--color-primary), #60A5FA);
 }
 
 .document-header {
@@ -101,7 +101,7 @@
 }
 
 .document-header h3 {
-  color: #31326F;
+  color: var(--color-text-primary);
   font-size: 1.3rem;
   font-weight: 600;
   margin: 0;
@@ -110,8 +110,8 @@
 }
 
 .document-id {
-  background: rgba(49, 50, 111, 0.1);
-  color: #31326F;
+  background: rgba(255,255,255,0.06);
+  color: var(--color-text-primary);
   padding: 0.3rem 0.8rem;
   border-radius: 20px;
   font-size: 0.8rem;
@@ -132,23 +132,23 @@
 }
 
 .status-pending .status-badge {
-  background: rgba(255, 215, 0, 0.1);
-  color: #B8860B;
+  background: rgba(96,165,250,0.15);
+  color: #dbeafe;
 }
 
 .status-approved .status-badge {
-  background: rgba(76, 175, 80, 0.1);
-  color: #2E7D32;
+  background: rgba(22,163,74,0.15);
+  color: #bbf7d0;
 }
 
 .status-rejected .status-badge {
-  background: rgba(244, 67, 54, 0.1);
-  color: #C62828;
+  background: rgba(239,68,68,0.15);
+  color: #fecaca;
 }
 
 .status-clarification .status-badge {
-  background: rgba(255, 152, 0, 0.1);
-  color: #E65100;
+  background: rgba(79,195,247,0.15);
+  color: #bae6fd;
 }
 
 .status-icon {
@@ -159,7 +159,7 @@
 .progress-bar {
   width: 100%;
   height: 8px;
-  background: #e9ecef;
+  background: rgba(255,255,255,0.1);
   border-radius: 4px;
   overflow: hidden;
   margin-bottom: 1rem;
@@ -177,15 +177,15 @@
   gap: 0.3rem;
   margin-bottom: 1rem;
   font-size: 0.9rem;
-  color: #666;
+  color: var(--color-text-secondary);
 }
 
 .status-count {
   font-size: 0.8rem;
-  color: #999;
+  color: var(--color-text-secondary);
   text-align: center;
   padding: 0.5rem;
-  background: rgba(0, 0, 0, 0.02);
+  background: rgba(255,255,255,0.04);
   border-radius: 8px;
 }
 
@@ -205,13 +205,13 @@
 }
 
 .modal-content {
-  background: white;
+  background: var(--color-surface);
   border-radius: 20px;
   max-width: 600px;
   width: 100%;
   max-height: 80vh;
   overflow-y: auto;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
   animation: modalSlideIn 0.3s ease;
 }
 
@@ -235,7 +235,7 @@
 }
 
 .modal-header h3 {
-  color: #ffffff;
+  color: var(--color-text-primary);
   font-size: 1.5rem;
   font-weight: 600;
   margin: 0;
@@ -258,8 +258,8 @@
 }
 
 .close-btn:hover {
-  background: rgba(49, 50, 111, 0.1);
-  color: #31326F;
+  background: rgba(255,255,255,0.1);
+  color: var(--color-text-primary);
 }
 
 .status-timeline {
@@ -267,7 +267,7 @@
 }
 
 .status-timeline h4 {
-  color: #31326F;
+  color: var(--color-text-primary);
   font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
@@ -287,7 +287,7 @@
   top: 40px;
   bottom: -24px;
   width: 2px;
-  background: #e9ecef;
+  background: rgba(255,255,255,0.12);
 }
 
 .timeline-marker {
@@ -302,7 +302,7 @@
 }
 
 .timeline-icon {
-  color: white;
+  color: #0b1220;
   font-weight: bold;
   font-size: 1.1rem;
 }
@@ -313,25 +313,25 @@
 }
 
 .timeline-status {
-  color: #31326F;
+  color: var(--color-text-primary);
   font-weight: 600;
   font-size: 1.1rem;
   margin-bottom: 0.3rem;
 }
 
 .timeline-date {
-  color: #666;
+  color: var(--color-text-secondary);
   font-size: 0.9rem;
   margin-bottom: 0.5rem;
 }
 
 .timeline-note {
-  color: #555;
+  color: var(--color-text-secondary);
   line-height: 1.5;
-  background: rgba(0, 0, 0, 0.02);
+  background: rgba(255,255,255,0.04);
   padding: 0.8rem;
   border-radius: 8px;
-  border-left: 3px solid #31326F;
+  border-left: 3px solid var(--color-primary);
 }
 
 /* Responsive Design */
