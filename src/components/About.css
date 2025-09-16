@@ -3,7 +3,7 @@
   min-height: 100vh;
   background: var(--color-bg);
   padding: 2rem 1rem;
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Bitcount Grid Double", system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 .about-wrapper {
