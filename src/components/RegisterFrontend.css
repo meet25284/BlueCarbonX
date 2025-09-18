@@ -138,16 +138,13 @@ body{
   margin-bottom: 1.5rem;
 }
 
-.form-group {
-  margin-bottom: 1.5rem;
+label.form-label{
   color: white;
 }
-
 
 .form-label {
   display: block;
   font-weight: 600;
-  color: var(--color-text-primary);
   margin-bottom: 0.5rem;
   font-size: 0.9rem;
 }

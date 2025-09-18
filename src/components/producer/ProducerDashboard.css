@@ -5,7 +5,7 @@
 
 body {
   margin: 0;
-  font-family: "Bitcount Grid Double", system-ui, 'Roboto', sans-serif;
+  font-family: "Playfair", serif;
   background-color: var(--color-bg);
   color: var(--color-text-secondary);
   line-height: 1.6;
@@ -52,19 +52,43 @@ body {
 /* No fixed sidebar; flex layout handles spacing */
 
 #sidebar-open {
-  position: static;
-  width: 240px;
-  background: var(--color-surface);
-  padding: 24px 16px;
-  border-right: 1px solid rgba(255,255,255,0.12);
-  color: var(--color-text-secondary);
-  box-shadow: 2px 0 8px rgba(0,0,0,0.04);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 100%;
+  padding: 2rem 1rem;
   
 }
-
+#sidebar-bt{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+.bt{
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  background: transparent;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 1rem;
+  position: relative;
+  text-align: left;
+  width: 100%;
+}
+.bt:hover{
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--color-text-primary);
+  transform: translateX(5px);
+}
+.bt:active{
+  background: linear-gradient(135deg, var(--color-primary), #60A5FA);
+  color: #0b1220;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+}
 #sidebar {
   background: var(--color-surface);
   border-right: 1px solid rgba(255,255,255,0.12);
@@ -78,16 +102,7 @@ body {
 
 }
 
-#sidebar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  
-}
+
 
 #sidebar-title {
   font-size: 35px;
@@ -107,35 +122,6 @@ body {
   margin-bottom: 8px;
 }
 
-#sidebar li {
-  display: block;
-  margin: 12px 8px;
-  padding: 14px 16px;
-  cursor: pointer;
-  border-radius: 14px;
-  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
-  color: var(--color-text-secondary);
-  list-style: none;
-  font-size: 16px;
-  line-height: 1.4;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
-  background: rgba(255,255,255,0.04);
-}
-
-#sidebar li:hover {
-  background-color: rgba(255,255,255,0.08);
-}
-
-#active {
-  background: linear-gradient(180deg, var(--color-primary) 0%, #60A5FA 100%);
-  color: #0b1220;
-  box-shadow: 0 15px 24px rgba(0,0,0,0.35);
-}
-
-#sidebar li:focus {
-  outline: 2px solid #c7d2fe;
-  outline-offset: 2px;
-}
 
 #main {
   flex: 1;

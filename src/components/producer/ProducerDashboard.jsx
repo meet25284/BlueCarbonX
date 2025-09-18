@@ -14,29 +14,25 @@ export default function ProducerDashboard() {
         {/* Sidebar */}
         <aside id="sidebar-open" role="navigation" aria-label="Producer navigation">
           <div id="sidebar-title">Producer</div>
-          <ul style={{ listStyleType: "none", fontSize: "20px", width: "190px"}}>
-            <li
+          <div id="sidebar-bt">
+            <button className="bt"
               onClick={() => setActiveContent('Upload MRV')}
               id={activeContent === 'Upload MRV' ? 'active' : undefined}
-              style={{margin:"10px", borderRadius: "8px",textAlign: "center" }}
             >
               Upload MRV
-            </li>
-            <li
+            </button>
+            <button className="bt"
               onClick={() => setActiveContent('Projects')}
               id={activeContent === 'Projects' ? 'active' : undefined}
-              style={{margin:"10px", borderRadius: "8px",textAlign: "center" }}
             >
               Projects
-            </li>
-            <li
+            </button>
+            <button className="bt"
               onClick={() => setActiveContent('My Credits')}
               id={activeContent === 'My Credits' ? 'active' : undefined}
-              style={{margin:"10px", borderRadius: "8px",textAlign: "center" }}
             >
               My Credits
-            </li>
-          </ul>
+            </button></div>
         </aside>
         {!isDesktop && isSidebarOpen && <div id="sidebar-overlay" onClick={() => setIsSidebarOpen(false)} />}
 
