@@ -3,6 +3,7 @@ import './App.css'
 import Footer from './components/ui/Footer'
 import Header from './components/ui/Header'
 
+
 function Landing() {
   const navigate = useNavigate()
   return (
@@ -19,6 +20,7 @@ function Landing() {
         height: "90vh", 
         width: "100%",
         textAlign: 'center',
+        
       }}
       >
         <div className="hero-content">
@@ -31,7 +33,7 @@ function Landing() {
           <div className="hero-buttons">
             <button className="btn btn-primary btn-large" onClick={() => navigate('/producer')}>Login as Producer</button>
             <button className="btn btn-secondary btn-large" onClick={() => navigate('/verifier')}>Login as Verifier</button>
-            <button className="btn btn-outline btn-large" onClick={() => navigate('/marketplace')}>Explore Marketplace</button>
+            <button className="btn btn-outline btn-large" onClick={() => navigate('/marketplace')} style={{backgroundColor : '#00c5ff'}}>Explore Marketplace</button>
           </div>
         </div>
       </section>
